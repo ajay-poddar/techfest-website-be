@@ -91,10 +91,11 @@
         		console.log(xmlhttp.responseText);
         	}
 		};
-		formData.append("user-id",response.id);
+		formData.append("userId",response.id);
 		formData.append("name",response.name);
 		formData.append("email",response.email);
-		formData.append("user-type",true);
+    formData.append("eventId",null);
+		formData.append("userType",true);
 		xmlhttp.send(formData);
     });
   }
